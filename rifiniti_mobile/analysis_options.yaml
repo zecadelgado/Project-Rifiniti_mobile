@@ -1,0 +1,48 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  errors:
+    invalid_annotation_target: ignore
+
+linter:
+  rules:
+    # Style
+    prefer_single_quotes: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_final_fields: true
+    prefer_final_locals: true
+    avoid_print: false # Allow for development logging
+    
+    # Documentation
+    public_member_api_docs: false
+    
+    # Code Quality
+    avoid_empty_else: true
+    avoid_relative_lib_imports: true
+    avoid_returning_null_for_future: true
+    avoid_slow_async_io: true
+    avoid_types_as_parameter_names: true
+    cancel_subscriptions: true
+    close_sinks: true
+    prefer_void_to_null: true
+    
+    # Null Safety
+    avoid_null_checks_in_equality_operators: true
+    null_closures: true
+    
+    # Formatting
+    curly_braces_in_flow_control_structures: true
+    empty_catches: true
+    empty_constructor_bodies: true
+    empty_statements: true
+    
+    # Naming
+    constant_identifier_names: true
+    file_names: true
+    library_names: true
+    non_constant_identifier_names: true
+    package_names: true
